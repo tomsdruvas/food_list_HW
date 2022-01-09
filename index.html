@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Intake Tracker</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/app.js"></script>
+</head>
+<body>
+    
+        <div class="container">
+            <!-- Left content -->
+            <div class="container__half">
+                <form id="new-addition">
+                    <div>
+                        <label for="foodName">Food:</label>
+                        <input id="foodName" type="text">                
+                    </div>
+                    <br>
+                    <div>
+                        <label for="foodTime">Meal time:</label>
+                        <select name="" id="foodTime">
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Snack">Snack</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="slidecontainer">
+                        <label for="foodEnjoyment">How much did you enjoy the food 1-10?</label><div id="range_slider">
+                        <input autocomplete="off" type="range" min="1" max="10" value="1" class="slider" id="foodEnjoyment">
+                        <span id="valueDisplay"></span></div>
+                    </div>
+                    
+                
+                    <input type="submit" value="Add Item"/>
+
+                </form>
+                <button id="clear-list">Clear the list</button>
+            </div>
+        
+            <!-- Right content -->
+            <div class="container__half">
+                <h1>Food List</h1>
+                <ul id="food-list"></ul>
+            </div>
+        </div>
+    
+    
+</body>
+</html>
